@@ -73,13 +73,13 @@ body {
 .body {
   margin: 0rem 1.5rem;
   background-color: rgb(8, 92, 148);
-  width: 76rem;
+  width: 76.5rem;
 
   
 }
 .section1 {
   background-color: rgb(255, 255, 255);
-  width: 100%;
+  width: 76.5rem;
   height: 5rem;
   display: flex;
   align-items: center;
