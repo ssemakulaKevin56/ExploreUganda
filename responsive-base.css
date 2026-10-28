@@ -1,0 +1,134 @@
+/* =========================================================
+   Responsive base: works on any screen from 320px phones to 4K
+   Link it first, then write your own styles below it.
+   ========================================================= */
+
+/* 1. Predictable sizing: padding and borders stay inside the width */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+
+/* 2. Fluid root size
+      16px on the smallest phones (320px wide)
+      20px on desktops (1440px wide and up)
+      Everything written in rem scales from this one line. */
+html { font-size: clamp(1rem, 0.929rem + 0.357vw, 1.25rem); }
+
+/* 3. Type scale: use these as they are */
+body  { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 1rem; line-height: 1.6; }
+h1    { font-size: 2.5rem;  line-height: 1.15; }   /* 40px phone, 50px desktop */
+h2    { font-size: 2rem;    line-height: 1.2; }    /* 32px to 40px */
+h3    { font-size: 1.5rem;  line-height: 1.3; }    /* 24px to 30px */
+h4    { font-size: 1.25rem; line-height: 1.4; }    /* 20px to 25px */
+small { font-size: 0.875rem; }                     /* 14px to 17.5px */
+
+/* 4. Spacing scale: use for padding, margin and gap */
+:root {
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+}
+
+/* 5. Images and videos never overflow the screen */
+img, video, svg, iframe { max-width: 100%; height: auto; display: block; }
+
+/* 6. Page container: full width on phones, capped at 1200px on big screens */
+.container { width: min(100% - 2rem, 75rem); margin-inline: auto; }
+
+/* 7. Section spacing */
+section { padding-block: var(--space-xl); }
+
+/* 8. Full-screen block (hero, splash) */
+.full-screen { min-height: 100dvh; }
+
+/* 9. Self-adjusting grid: cards wrap on their own, no device sizes needed
+      1 column on phones, 2 on tablets, 3 or 4 on desktops, automatically */
+.grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+
+/* 10. Self-adjusting row: items sit side by side and wrap when space runs out */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* 11. Standard breakpoints: only needed when the layout itself must change
+       (for example, showing a hamburger menu on phones) */
+@media (min-width: 640px)  { /* large phones and up */ }
+@media (min-width: 768px)  { /* tablets and up */ }
+@media (min-width: 1024px) { /* laptops and up */ }
+@media (min-width: 1280px) { /* desktops and up */ }
+
+/*custom css for the website*/
+body {
+  background-color: rgb(25, 41, 5);
+  
+}
+.body {
+  margin: 0rem 1.5rem;
+  background-color: rgb(8, 92, 148);
+
+  height: 50rem;
+  
+}
+.section1 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.logoContainer {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+
+  margin-left: 4rem;
+  margin-right: 0.5rem;
+
+  background-color: rgb(30, 131, 5);
+  
+}
+.logo1 {
+  border-radius: 50%;
+  background-color: rgb(30, 131, 5);
+}
+h3 .HighlightUganda {
+  color: rgb(30, 131, 5);
+  font-weight: strong;
+}
+
+.HomeLabel{
+  margin-left: 5rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: rgb(30, 131, 5);
+  padding-bottom: 0.25rem;
+  border-bottom: 0.2rem solid rgb(30, 119, 8);
+}
+
+.TabLabels{
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+.BookTripButton {
+  height: 2.5rem;
+  margin-left: 5rem;
+  padding: 0.5rem 1.25rem;
+  background-color: rgb(30, 131, 5);
+  color: white;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 0.8rem;
+}
